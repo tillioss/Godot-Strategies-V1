@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/CuteBG_ogg.ogg-b5f7845f8071a134c52e4f65dc9c4dda.oggstr"
+
+[deps]
+
+source_file="res://SFX/CuteBG_ogg.ogg"
+dest_files=[ "res://.import/CuteBG_ogg.ogg-b5f7845f8071a134c52e4f65dc9c4dda.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

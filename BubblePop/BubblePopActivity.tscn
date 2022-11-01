@@ -1,0 +1,28 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://BubblePop/HUD_bubblePop.tscn" type="PackedScene" id=1]
+[ext_resource path="res://BubblePop/Bubble.tscn" type="PackedScene" id=2]
+[ext_resource path="res://SFX/CuteBG_ogg.ogg" type="AudioStream" id=3]
+[ext_resource path="res://BubblePop/BubbleSpawner.tscn" type="PackedScene" id=4]
+
+[node name="BubblePopScene" type="Node2D"]
+
+[node name="HUD_bubblePop" parent="." instance=ExtResource( 1 )]
+layer = -5
+
+[node name="Bubble" parent="." instance=ExtResource( 2 )]
+visible = false
+position = Vector2( 403, 634 )
+
+[node name="BubbleSpawner" parent="." instance=ExtResource( 4 )]
+
+[node name="BG_Music" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 3 )
+volume_db = -5.0
+autoplay = true
+
+[connection signal="activityOver" from="HUD_bubblePop" to="BubbleSpawner" method="_on_HUD_bubblePop_activityOver"]
+[connection signal="bubblePopped" from="Bubble" to="HUD_bubblePop" method="_on_Bubble_bubblePopped"]
+[connection signal="oneMoreBubblePopped" from="BubbleSpawner" to="HUD_bubblePop" method="_on_BubbleSpawner_oneMoreBubblePopped"]
+
+[editable path="BubbleSpawner"]

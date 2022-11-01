@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Cute BG.mp3-281ae6553d6c64d7e478a20274ab408f.mp3str"
+
+[deps]
+
+source_file="res://SFX/Cute BG.mp3"
+dest_files=[ "res://.import/Cute BG.mp3-281ae6553d6c64d7e478a20274ab408f.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

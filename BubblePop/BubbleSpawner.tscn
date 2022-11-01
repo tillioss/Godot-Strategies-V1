@@ -1,0 +1,26 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://BubblePop/BubbleSpawner.gd" type="Script" id=1]
+[ext_resource path="res://BubblePop/Bubble.tscn" type="PackedScene" id=2]
+
+[node name="BubbleSpawner" type="Node2D"]
+script = ExtResource( 1 )
+BubbleScene = ExtResource( 2 )
+
+[node name="Position1" type="Node2D" parent="."]
+position = Vector2( 91, -150 )
+
+[node name="Position2" type="Node2D" parent="."]
+position = Vector2( 265, -241 )
+
+[node name="Position3" type="Node2D" parent="."]
+position = Vector2( 446, -150 )
+
+[node name="Position4" type="Node2D" parent="."]
+position = Vector2( 616, -241 )
+
+[node name="Position5" type="Node2D" parent="."]
+position = Vector2( 816, -150 )
+
+[node name="Position6" type="Node2D" parent="."]
+position = Vector2( 982, -84 )

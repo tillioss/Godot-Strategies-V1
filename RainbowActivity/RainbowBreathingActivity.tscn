@@ -1,0 +1,38 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://RainbowActivity/CloudsBesideRainbow.tscn" type="PackedScene" id=1]
+[ext_resource path="res://RainbowActivity/Rainbow.tscn" type="PackedScene" id=2]
+[ext_resource path="res://RainbowActivity/LoveButton.tscn" type="PackedScene" id=3]
+[ext_resource path="res://RainbowActivity/HUD.tscn" type="PackedScene" id=4]
+
+[node name="RainbowBreathingActivity" type="Node2D"]
+
+[node name="HUD" parent="." instance=ExtResource( 4 )]
+
+[node name="Parent" type="Node2D" parent="."]
+position = Vector2( 0, 900 )
+
+[node name="Rainbow" parent="Parent" instance=ExtResource( 2 )]
+position = Vector2( 540, 0 )
+scale = Vector2( 0.8, 0.85 )
+
+[node name="Clouds_left" parent="Parent" instance=ExtResource( 1 )]
+modulate = Color( 1, 1, 0.945098, 1 )
+position = Vector2( 240, 100 )
+z_index = 10
+
+[node name="Clouds_right" parent="Parent" instance=ExtResource( 1 )]
+modulate = Color( 1, 1, 0.945098, 1 )
+position = Vector2( 840, 100 )
+z_index = 10
+
+[node name="LoveButton" parent="Parent" instance=ExtResource( 3 )]
+position = Vector2( 540, 470 )
+scale = Vector2( 0.8, 0.8 )
+
+[connection signal="changeText" from="Parent/Rainbow" to="HUD" method="_on_Rainbow_changeText"]
+[connection signal="RequiredCyclesFinished" from="Parent/LoveButton" to="HUD" method="_on_LoveButton_RequiredCyclesFinished"]
+[connection signal="loveButtonHeld" from="Parent/LoveButton" to="Parent/Rainbow" method="_on_LoveButton_loveButtonHeld"]
+[connection signal="resetInstructions" from="Parent/LoveButton" to="HUD" method="_on_LoveButton_resetInstructions"]
+
+[editable path="Parent/LoveButton"]

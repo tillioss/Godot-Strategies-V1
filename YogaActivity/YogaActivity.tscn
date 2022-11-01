@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://YogaActivity/HUD_YogaActivity.tscn" type="PackedScene" id=1]
+[ext_resource path="res://YogaActivity/YogaCat.tscn" type="PackedScene" id=3]
+
+[node name="YogaMainScene" type="Node2D"]
+
+[node name="YogaCat" parent="." instance=ExtResource( 3 )]
+position = Vector2( 530, 875 )
+
+[node name="HUD_bubblePop" parent="." instance=ExtResource( 1 )]
+
+[connection signal="activityOver" from="HUD_bubblePop" to="YogaCat" method="_on_HUD_yoga_activityOver"]
+[connection signal="beginAnimation" from="HUD_bubblePop" to="YogaCat" method="_on_HUD_timerStarted_beginAnimation"]
