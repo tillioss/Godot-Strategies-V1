@@ -1,7 +1,105 @@
-[gd_scene load_steps=2 format=2]
+[gd_scene load_steps=12 format=2]
 
 [ext_resource path="res://Coloring Activity/HUD_coloringActivity.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Coloring Activity/ColorablePieceBackground.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Coloring Activity/ColorableShapesParent.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Coloring Activity/ColorablePieceShapes.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Coloring Activity/Art2.png" type="Texture" id=5]
+[ext_resource path="res://Coloring Activity/ColoringManager.tscn" type="PackedScene" id=6]
+[ext_resource path="res://Coloring Activity/Art3.png" type="Texture" id=7]
+[ext_resource path="res://Coloring Activity/Art5.png" type="Texture" id=8]
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 5 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+} ]
+
+[sub_resource type="SpriteFrames" id=2]
+animations = [ {
+"frames": [ ExtResource( 7 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+} ]
+
+[sub_resource type="SpriteFrames" id=3]
+animations = [ {
+"frames": [ ExtResource( 8 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+} ]
 
 [node name="ColoringScene" type="Node2D"]
 
 [node name="HUD_coloringActivity" parent="." instance=ExtResource( 1 )]
+
+[node name="ColorableBackground" parent="." instance=ExtResource( 2 )]
+position = Vector2( 536, 942 )
+scale = Vector2( 4.5, 4.5 )
+
+[node name="ColoringManager" parent="." instance=ExtResource( 6 )]
+position = Vector2( 540, 1600 )
+
+[node name="ColorableShapesParent" parent="." instance=ExtResource( 3 )]
+
+[node name="ColorablePieceShape" parent="ColorableShapesParent" instance=ExtResource( 4 )]
+position = Vector2( 316, 616 )
+rotation = 0.261799
+scale = Vector2( 1.2, 1.2 )
+
+[node name="ColorablePieceShape2" parent="ColorableShapesParent" instance=ExtResource( 4 )]
+position = Vector2( 691, 688 )
+rotation = 0.261799
+scale = Vector2( 1.61468, 1.61468 )
+
+[node name="ShapeSprite" parent="ColorableShapesParent/ColorablePieceShape2" index="0"]
+frames = SubResource( 1 )
+
+[node name="CollisionPolygon2D" parent="ColorableShapesParent/ColorablePieceShape2/Area2D" index="0"]
+polygon = PoolVector2Array( -77.8653, 6.11719, -106.219, -18.3437, -96.9054, -36.2272, -51.0546, -25.431, -64.8365, -40.9731, -89.7299, -74.0551, -84.2946, -99.2345, -62.0003, -104.567, -44.2656, -86.2372, -37.6707, -42.4816, -24.839, -20.9145, -13.1093, -20.2104, -22.7383, -65.7177, -2.76257, -74.9171, 13.0058, -66.3189, 9.64276, -42.9771, 7.24146, -16.0459, 19.9328, -11.7526, 26.0093, -34.5392, 31.1869, -75.0375, 43.0768, -73.7353, 61.7848, -42.2017, 36.6828, -16.2408, 33.5115, 0.638123, 52.3767, -3.13446, 68.0561, -35.547, 76.869, -38.5495, 98.588, -24.493, 105.246, 5.14005, 91.5099, 28.0555, 27.435, 23.4247, 31.9262, 76.0791, 18.9918, 101.986, -3.06781, 103.408, -28.5049, 82.6541, -19.7035, 70.0371, -32.1487, 71.4483, -64.4753, 60.8752, -70.449, 36.1882, -42.642, 37.0724, -22.6662, 27.873, -31.3848, 9.69186, -44.557, 3.60388 )
+
+[node name="ColorablePieceShape3" parent="ColorableShapesParent" instance=ExtResource( 4 )]
+position = Vector2( 447, 984 )
+rotation = 0.261799
+scale = Vector2( 1.62577, 1.62577 )
+
+[node name="ShapeSprite" parent="ColorableShapesParent/ColorablePieceShape3" index="0"]
+frames = SubResource( 2 )
+
+[node name="CollisionPolygon2D" parent="ColorableShapesParent/ColorablePieceShape3/Area2D" index="0"]
+polygon = PoolVector2Array( -82.3316, 1.68335, -69.7101, -46.2738, -27.3819, -102.191, -28.1322, -66.9664, -21.4657, -25.451, 1.64301, -17.6335, 25.8661, -5.6572, 29.6244, 22.6281, 11.5475, 47.849, -28.4186, 57.9211, -59.4529, 49.0433, -73.5019, 29.8833 )
+
+[node name="ColorablePieceShape4" parent="ColorableShapesParent" instance=ExtResource( 4 )]
+position = Vector2( 277, 1169 )
+rotation = -1.83259
+scale = Vector2( 1.61739, 1.61739 )
+
+[node name="ShapeSprite" parent="ColorableShapesParent/ColorablePieceShape4" index="0"]
+frames = SubResource( 3 )
+
+[node name="CollisionPolygon2D" parent="ColorableShapesParent/ColorablePieceShape4/Area2D" index="0"]
+polygon = PoolVector2Array( -70.7557, -6.8598, -51.4534, -45.6263, -6.61469, -67.9985, 29.1613, -66.0539, 68.6384, -44.6508, 57.6454, -29.7662, 10.5185, -48.7616, -39.0306, -30.1986, -44.0311, 9.8528, -11.5983, 24.2742, -4.36359, 37.6749, -12.5138, 60.9626, -32.0577, 69.7353, -60.6074, 55.0808, -47.036, 37.7032, -59.6606, 25.4054 )
+
+[connection signal="ActiveColorChanged" from="ColoringManager" to="ColorableShapesParent" method="_on_ColoringManager_ActiveColorChanged"]
+[connection signal="ActivityOverSendMessage" from="ColorableShapesParent" to="HUD_coloringActivity" method="_on_ColorableShapesParent_ActivityOverSendMessage"]
+[connection signal="ActivityOverSendMessage" from="ColorableShapesParent" to="ColoringManager" method="_on_ColorableShapesParent_ActivityOverSendMessage"]
+
+[editable path="ColoringManager"]
+[editable path="ColoringManager/RED"]
+[editable path="ColoringManager/YELLOW"]
+[editable path="ColoringManager/ORANGE"]
+[editable path="ColoringManager/GREEN"]
+[editable path="ColoringManager/SKYBLUE"]
+[editable path="ColoringManager/BLUE"]
+[editable path="ColoringManager/VIOLET"]
+[editable path="ColoringManager/PINK"]
+[editable path="ColoringManager/BROWN"]
+[editable path="ColoringManager/BLACK"]
+[editable path="ColorableShapesParent/ColorablePieceShape"]
+[editable path="ColorableShapesParent/ColorablePieceShape2"]
+[editable path="ColorableShapesParent/ColorablePieceShape3"]
+[editable path="ColorableShapesParent/ColorablePieceShape4"]

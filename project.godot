@@ -8,32 +8,10 @@
 
 config_version=4
 
-_global_script_classes=[ {
-"base": "Node",
-"class": "AtlasScene",
-"language": "GDScript",
-"path": "res://addons/sprite_cutter/AtlasScene.gd"
-}, {
-"base": "EditorVCSInterface",
-"class": "GitAPI",
-"language": "NativeScript",
-"path": "res://addons/godot-git-plugin/git_api.gdns"
-}, {
-"base": "EditorPlugin",
-"class": "SheetToSpritePlugin",
-"language": "GDScript",
-"path": "res://addons/sheet_to_sprite/plugin.gd"
-} ]
-_global_script_class_icons={
-"AtlasScene": "",
-"GitAPI": "",
-"SheetToSpritePlugin": ""
-}
-
 [application]
 
 config/name="Strategies"
-run/main_scene="res://YogaActivity/YogaActivity.tscn"
+run/main_scene="res://RainbowActivity/RainbowBreathingActivity.tscn"
 config/icon="res://icon.png"
 
 [display]
