@@ -4,7 +4,7 @@
  These coping strategies are developed using GDScript in Godot Game Engine
  
 ## Instructions to install Godot ##
- 1. Download the Godot game engine from the official website
+ 1. Download the Godot game engine from the official website here: [Godot](https://godotengine.org/ "Godot official Website")
  2. Unzip the downloaded file and run the Godot Application
  
 ## How to open this project ##
