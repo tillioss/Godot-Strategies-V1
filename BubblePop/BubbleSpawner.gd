@@ -1,3 +1,9 @@
+#This script is the core of this activity. It handles:
+#1. Spawning bubbles in a wave based style
+#2. Randomizing the number of bubbles and thier positions based on predefined ranges and positions
+#3. Receiving signals from popped bubbles and act as a bridge to update the UI
+#4. Stop spawning bubbles once the pop count is met
+
 extends Node2D
 
 export (PackedScene) var BubbleScene

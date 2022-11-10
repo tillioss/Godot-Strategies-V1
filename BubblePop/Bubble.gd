@@ -1,3 +1,11 @@
+#This script deals with all the Bubble behaviour
+#that includes but not limited to
+#1. Updating the bubbles position every frame based on its speed
+#2. Checking if player is clicking on the bubble
+#3. Sending signal once it is popped and 
+#4. Playing appropriate sound effect and animations
+#5. Self-destroying if it isnt popped and gone out of visible screen
+
 extends Area2D
 
 var isMouseOnBubble = false

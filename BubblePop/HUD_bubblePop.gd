@@ -1,3 +1,8 @@
+#This script is responsible for updating UI and some key decisions like:
+#1. Receiving signals to update the Pop counter
+#2. Signal the spawner to stop spawning once the counter requirement is reached
+#3. Handle clicks on the next button to direct to the webapp
+
 extends CanvasLayer
 
 export var NumberOfBubbles = 20
