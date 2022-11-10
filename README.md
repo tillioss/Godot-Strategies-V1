@@ -9,6 +9,7 @@ These coping strategies are developed using GDScript in Godot Game Engine, an op
  
 ## Resources to learn Godot ##
  Good place to find documentation and tutorials for GODOT: [Documentation and Tutorials](https://docs.godotengine.org/en/stable/index.html "Godot official Documentation")
+ 
  Basic GDScript programming Interactive Tutorial: [Play here](https://gdquest.itch.io/learn-godot-gdscript "Interative GDScript Tutorial")
  
 ## How to open this project ##
@@ -23,7 +24,7 @@ These coping strategies are developed using GDScript in Godot Game Engine, an op
   
  [Click here to see all related files](https://github.com/tillioss/Godot-Strategies-V1/tree/main/BubblePop "Bubble Pop Activity")
   
- Documentation: [Read here](https://docs.google.com/document/d/14SLCAqWyhhJSi7_0UrhkfbxTF3vAv6cq5oegouETnz0/edit "Documentation")
+ Documentation: [Read here](https://docs.google.com/document/d/14SLCAqWyhhJSi7_0UrhkfbxTF3vAv6cq5oegouETnz0/edit?usp=sharing "Documentation")
   
 ### 2. Rainbow Strategy ###
  The Rainbow Strategy is a breathing exercise that helps the kids to regain focus and a sense of clarity. 
