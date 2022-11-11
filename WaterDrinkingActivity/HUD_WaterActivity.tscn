@@ -1,11 +1,10 @@
-[gd_scene load_steps=23 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://Fredoka-Bold.ttf" type="DynamicFontData" id=1]
 [ext_resource path="res://Hug Activity/HUD_HugActivity.gd" type="Script" id=2]
 [ext_resource path="res://RainbowActivity/Next Button.png" type="Texture" id=3]
-[ext_resource path="res://RainbowActivity/Heart Not Pressed.png" type="Texture" id=4]
+[ext_resource path="res://WaterDrinkingActivity/WaterGlass.png" type="Texture" id=4]
 [ext_resource path="res://BubblePop/CounterBG.png" type="Texture" id=5]
-[ext_resource path="res://Hug Activity/TilliHug.png" type="Texture" id=6]
 
 [sub_resource type="DynamicFont" id=2]
 size = 80
@@ -17,72 +16,14 @@ font_data = ExtResource( 1 )
 size = 180
 font_data = ExtResource( 1 )
 
-[sub_resource type="AtlasTexture" id=13]
-flags = 4
-atlas = ExtResource( 6 )
-region = Rect2( 0, 0, 256, 256 )
-
-[sub_resource type="AtlasTexture" id=3]
-flags = 4
-atlas = ExtResource( 6 )
-region = Rect2( 256, 0, 256, 256 )
-
-[sub_resource type="AtlasTexture" id=14]
-flags = 4
-atlas = ExtResource( 6 )
-region = Rect2( 512, 0, 256, 256 )
-
-[sub_resource type="AtlasTexture" id=15]
-flags = 4
-atlas = ExtResource( 6 )
-region = Rect2( 768, 0, 256, 256 )
-
 [sub_resource type="AtlasTexture" id=6]
 flags = 4
-atlas = ExtResource( 6 )
-region = Rect2( 0, 256, 256, 256 )
+atlas = ExtResource( 4 )
+region = Rect2( 0, 0, 512, 512 )
 
-[sub_resource type="AtlasTexture" id=7]
-flags = 4
-atlas = ExtResource( 6 )
-region = Rect2( 256, 256, 256, 256 )
-
-[sub_resource type="AtlasTexture" id=8]
-flags = 4
-atlas = ExtResource( 6 )
-region = Rect2( 512, 256, 256, 256 )
-
-[sub_resource type="AtlasTexture" id=9]
-flags = 4
-atlas = ExtResource( 6 )
-region = Rect2( 768, 256, 256, 256 )
-
-[sub_resource type="AtlasTexture" id=10]
-flags = 4
-atlas = ExtResource( 6 )
-region = Rect2( 0, 512, 256, 256 )
-
-[sub_resource type="AtlasTexture" id=11]
-flags = 4
-atlas = ExtResource( 6 )
-region = Rect2( 256, 512, 256, 256 )
-
-[sub_resource type="AtlasTexture" id=12]
-flags = 4
-atlas = ExtResource( 6 )
-region = Rect2( 512, 512, 256, 256 )
-
-[sub_resource type="SpriteFrames" id=16]
+[sub_resource type="SpriteFrames" id=7]
 animations = [ {
-"frames": [ SubResource( 13 ), SubResource( 3 ), SubResource( 14 ), SubResource( 15 ), SubResource( 6 ), SubResource( 7 ), SubResource( 8 ), SubResource( 9 ), SubResource( 10 ), SubResource( 11 ), SubResource( 12 ) ],
-"loop": true,
-"name": "default",
-"speed": 5.0
-} ]
-
-[sub_resource type="SpriteFrames" id=17]
-animations = [ {
-"frames": [ ExtResource( 4 ) ],
+"frames": [ SubResource( 6 ) ],
 "loop": true,
 "name": "default",
 "speed": 5.0
@@ -138,10 +79,10 @@ anchor_left = 1.0
 anchor_top = 1.0
 anchor_right = 1.0
 anchor_bottom = 1.0
-margin_left = -273.0
-margin_top = -249.0
-margin_right = -53.0
-margin_bottom = -79.0
+margin_left = -321.0
+margin_top = -246.0
+margin_right = -101.0
+margin_bottom = -76.0
 texture_normal = ExtResource( 3 )
 texture_pressed = ExtResource( 3 )
 
@@ -177,17 +118,10 @@ text = "20"
 align = 1
 valign = 1
 
-[node name="TilliHugging" type="AnimatedSprite" parent="."]
-position = Vector2( 540, 1077 )
-scale = Vector2( 4.70703, 4.83008 )
-z_index = 1
-frames = SubResource( 16 )
-frame = 9
-
-[node name="LoveSymbol" type="AnimatedSprite" parent="."]
-position = Vector2( 540, 846.5 )
-scale = Vector2( 2.6345, 2.85374 )
-frames = SubResource( 17 )
+[node name="WaterGlass" type="AnimatedSprite" parent="."]
+position = Vector2( 540, 980 )
+scale = Vector2( 1.85938, 1.85938 )
+frames = SubResource( 7 )
 
 [connection signal="timeout" from="StartingInstuction/HideInstructionsTimer" to="." method="_on_HideInstructionsTimer_timeout"]
 [connection signal="button_down" from="Next" to="." method="_on_Next_button_down"]

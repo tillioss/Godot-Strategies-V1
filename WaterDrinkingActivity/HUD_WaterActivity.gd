@@ -19,8 +19,6 @@ func _ready():
 	currentNumberOfSeconds = TotalNumberOfSeconds
 	floatTime = TotalNumberOfSeconds
 	
-	
-	
 func _process(delta):
 	if isTimerActive:
 		floatTime -= delta
@@ -44,13 +42,8 @@ func _on_Next_button_down():
 
 
 #Hiding the initial instructions after the child timer runs out
-func _on_ChangeInstructionsTimer_timeout():
+func _on_HideInstructionsTimer_timeout():
 	$StartingInstuction.text = "Hugs help reduce\nstress"
 	isTimerActive = true
 	$TilliHugging.play("default")
-	$HuggingBG.play()
-
-func _on_StartingTimer_timeout():
-	$HugYourselfDialogue.play()
-	
 
