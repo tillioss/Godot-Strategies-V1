@@ -1,0 +1,193 @@
+[gd_scene load_steps=23 format=2]
+
+[ext_resource path="res://Fredoka-Bold.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://Hug Activity/HUD_HugActivity.gd" type="Script" id=2]
+[ext_resource path="res://RainbowActivity/Next Button.png" type="Texture" id=3]
+[ext_resource path="res://RainbowActivity/Heart Not Pressed.png" type="Texture" id=4]
+[ext_resource path="res://BubblePop/CounterBG.png" type="Texture" id=5]
+[ext_resource path="res://Hug Activity/TilliHug.png" type="Texture" id=6]
+
+[sub_resource type="DynamicFont" id=2]
+size = 80
+font_data = ExtResource( 1 )
+
+[sub_resource type="Theme" id=5]
+
+[sub_resource type="DynamicFont" id=4]
+size = 180
+font_data = ExtResource( 1 )
+
+[sub_resource type="AtlasTexture" id=13]
+flags = 4
+atlas = ExtResource( 6 )
+region = Rect2( 0, 0, 256, 256 )
+
+[sub_resource type="AtlasTexture" id=3]
+flags = 4
+atlas = ExtResource( 6 )
+region = Rect2( 256, 0, 256, 256 )
+
+[sub_resource type="AtlasTexture" id=14]
+flags = 4
+atlas = ExtResource( 6 )
+region = Rect2( 512, 0, 256, 256 )
+
+[sub_resource type="AtlasTexture" id=15]
+flags = 4
+atlas = ExtResource( 6 )
+region = Rect2( 768, 0, 256, 256 )
+
+[sub_resource type="AtlasTexture" id=6]
+flags = 4
+atlas = ExtResource( 6 )
+region = Rect2( 0, 256, 256, 256 )
+
+[sub_resource type="AtlasTexture" id=7]
+flags = 4
+atlas = ExtResource( 6 )
+region = Rect2( 256, 256, 256, 256 )
+
+[sub_resource type="AtlasTexture" id=8]
+flags = 4
+atlas = ExtResource( 6 )
+region = Rect2( 512, 256, 256, 256 )
+
+[sub_resource type="AtlasTexture" id=9]
+flags = 4
+atlas = ExtResource( 6 )
+region = Rect2( 768, 256, 256, 256 )
+
+[sub_resource type="AtlasTexture" id=10]
+flags = 4
+atlas = ExtResource( 6 )
+region = Rect2( 0, 512, 256, 256 )
+
+[sub_resource type="AtlasTexture" id=11]
+flags = 4
+atlas = ExtResource( 6 )
+region = Rect2( 256, 512, 256, 256 )
+
+[sub_resource type="AtlasTexture" id=12]
+flags = 4
+atlas = ExtResource( 6 )
+region = Rect2( 512, 512, 256, 256 )
+
+[sub_resource type="SpriteFrames" id=16]
+animations = [ {
+"frames": [ SubResource( 13 ), SubResource( 3 ), SubResource( 14 ), SubResource( 15 ), SubResource( 6 ), SubResource( 7 ), SubResource( 8 ), SubResource( 9 ), SubResource( 10 ), SubResource( 11 ), SubResource( 12 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+} ]
+
+[sub_resource type="SpriteFrames" id=17]
+animations = [ {
+"frames": [ ExtResource( 4 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+} ]
+
+[node name="HUD_WaterActivity" type="CanvasLayer"]
+layer = -1
+script = ExtResource( 2 )
+
+[node name="ColorRect" type="ColorRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+color = Color( 0.396078, 0.596078, 0.929412, 1 )
+
+[node name="StartingInstuction" type="Label" parent="."]
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = -214.0
+margin_top = 237.0
+margin_right = 214.0
+margin_bottom = 264.0
+grow_horizontal = 2
+grow_vertical = 2
+custom_colors/font_color = Color( 1, 1, 0.996078, 1 )
+custom_fonts/font = SubResource( 2 )
+text = "Go get a Glass
+of Water"
+align = 1
+valign = 1
+
+[node name="HideInstructionsTimer" type="Timer" parent="StartingInstuction"]
+wait_time = 2.0
+autostart = true
+
+[node name="Continue" type="Label" parent="."]
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = -448.0
+margin_top = 1683.0
+margin_right = 221.0
+margin_bottom = 1828.0
+grow_horizontal = 2
+grow_vertical = 2
+custom_colors/font_color = Color( 1, 1, 0.996078, 1 )
+custom_fonts/font = SubResource( 2 )
+text = "Tap to continue"
+align = 1
+valign = 1
+
+[node name="Next" type="TextureButton" parent="."]
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -273.0
+margin_top = -249.0
+margin_right = -53.0
+margin_bottom = -79.0
+texture_normal = ExtResource( 3 )
+texture_pressed = ExtResource( 3 )
+
+[node name="TimerBG" type="TextureRect" parent="."]
+visible = false
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = 239.0
+margin_top = 635.0
+margin_right = 689.0
+margin_bottom = 1085.0
+rect_scale = Vector2( 0.5, 0.5 )
+texture = ExtResource( 5 )
+stretch_mode = 1
+
+[node name="TimeLeft" type="Label" parent="TimerBG"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -102.0
+margin_top = -109.5
+margin_right = 102.0
+margin_bottom = 109.5
+grow_horizontal = 0
+grow_vertical = 0
+theme = SubResource( 5 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_fonts/font = SubResource( 4 )
+text = "20"
+align = 1
+valign = 1
+
+[node name="TilliHugging" type="AnimatedSprite" parent="."]
+position = Vector2( 540, 1077 )
+scale = Vector2( 4.70703, 4.83008 )
+z_index = 1
+frames = SubResource( 16 )
+frame = 9
+
+[node name="LoveSymbol" type="AnimatedSprite" parent="."]
+position = Vector2( 540, 846.5 )
+scale = Vector2( 2.6345, 2.85374 )
+frames = SubResource( 17 )
+
+[connection signal="timeout" from="StartingInstuction/HideInstructionsTimer" to="." method="_on_HideInstructionsTimer_timeout"]
+[connection signal="button_down" from="Next" to="." method="_on_Next_button_down"]
