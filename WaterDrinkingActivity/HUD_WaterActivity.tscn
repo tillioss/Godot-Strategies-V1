@@ -1,10 +1,11 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=57 format=2]
 
 [ext_resource path="res://Fredoka-Bold.ttf" type="DynamicFontData" id=1]
-[ext_resource path="res://Hug Activity/HUD_HugActivity.gd" type="Script" id=2]
+[ext_resource path="res://WaterDrinkingActivity/HUD_WaterActivity.gd" type="Script" id=2]
 [ext_resource path="res://RainbowActivity/Next Button.png" type="Texture" id=3]
 [ext_resource path="res://WaterDrinkingActivity/WaterGlass.png" type="Texture" id=4]
 [ext_resource path="res://BubblePop/CounterBG.png" type="Texture" id=5]
+[ext_resource path="res://WaterDrinkingActivity/Drinking Water.mp3" type="AudioStream" id=6]
 
 [sub_resource type="DynamicFont" id=2]
 size = 80
@@ -16,6 +17,231 @@ font_data = ExtResource( 1 )
 size = 180
 font_data = ExtResource( 1 )
 
+[sub_resource type="AtlasTexture" id=8]
+flags = 4
+atlas = ExtResource( 4 )
+region = Rect2( 0, 0, 512, 512 )
+
+[sub_resource type="AtlasTexture" id=9]
+flags = 4
+atlas = ExtResource( 4 )
+region = Rect2( 512, 0, 512, 512 )
+
+[sub_resource type="AtlasTexture" id=10]
+flags = 4
+atlas = ExtResource( 4 )
+region = Rect2( 1024, 0, 512, 512 )
+
+[sub_resource type="AtlasTexture" id=11]
+flags = 4
+atlas = ExtResource( 4 )
+region = Rect2( 1536, 0, 512, 512 )
+
+[sub_resource type="AtlasTexture" id=12]
+flags = 4
+atlas = ExtResource( 4 )
+region = Rect2( 2048, 0, 512, 512 )
+
+[sub_resource type="AtlasTexture" id=13]
+flags = 4
+atlas = ExtResource( 4 )
+region = Rect2( 2560, 0, 512, 512 )
+
+[sub_resource type="AtlasTexture" id=14]
+flags = 4
+atlas = ExtResource( 4 )
+region = Rect2( 3072, 0, 512, 512 )
+
+[sub_resource type="AtlasTexture" id=15]
+flags = 4
+atlas = ExtResource( 4 )
+region = Rect2( 3584, 0, 512, 512 )
+
+[sub_resource type="AtlasTexture" id=16]
+flags = 4
+atlas = ExtResource( 4 )
+region = Rect2( 0, 512, 512, 512 )
+
+[sub_resource type="AtlasTexture" id=17]
+flags = 4
+atlas = ExtResource( 4 )
+region = Rect2( 512, 512, 512, 512 )
+
+[sub_resource type="AtlasTexture" id=18]
+flags = 4
+atlas = ExtResource( 4 )
+region = Rect2( 1024, 512, 512, 512 )
+
+[sub_resource type="AtlasTexture" id=19]
+flags = 4
+atlas = ExtResource( 4 )
+region = Rect2( 1536, 512, 512, 512 )
+
+[sub_resource type="AtlasTexture" id=20]
+flags = 4
+atlas = ExtResource( 4 )
+region = Rect2( 2048, 512, 512, 512 )
+
+[sub_resource type="AtlasTexture" id=21]
+flags = 4
+atlas = ExtResource( 4 )
+region = Rect2( 2560, 512, 512, 512 )
+
+[sub_resource type="AtlasTexture" id=22]
+flags = 4
+atlas = ExtResource( 4 )
+region = Rect2( 3072, 512, 512, 512 )
+
+[sub_resource type="AtlasTexture" id=23]
+flags = 4
+atlas = ExtResource( 4 )
+region = Rect2( 3584, 512, 512, 512 )
+
+[sub_resource type="AtlasTexture" id=24]
+flags = 4
+atlas = ExtResource( 4 )
+region = Rect2( 0, 1024, 512, 512 )
+
+[sub_resource type="AtlasTexture" id=25]
+flags = 4
+atlas = ExtResource( 4 )
+region = Rect2( 512, 1024, 512, 512 )
+
+[sub_resource type="AtlasTexture" id=26]
+flags = 4
+atlas = ExtResource( 4 )
+region = Rect2( 1024, 1024, 512, 512 )
+
+[sub_resource type="AtlasTexture" id=27]
+flags = 4
+atlas = ExtResource( 4 )
+region = Rect2( 1536, 1024, 512, 512 )
+
+[sub_resource type="AtlasTexture" id=28]
+flags = 4
+atlas = ExtResource( 4 )
+region = Rect2( 2048, 1024, 512, 512 )
+
+[sub_resource type="AtlasTexture" id=29]
+flags = 4
+atlas = ExtResource( 4 )
+region = Rect2( 2560, 1024, 512, 512 )
+
+[sub_resource type="AtlasTexture" id=30]
+flags = 4
+atlas = ExtResource( 4 )
+region = Rect2( 3072, 1024, 512, 512 )
+
+[sub_resource type="AtlasTexture" id=31]
+flags = 4
+atlas = ExtResource( 4 )
+region = Rect2( 3584, 1024, 512, 512 )
+
+[sub_resource type="AtlasTexture" id=32]
+flags = 4
+atlas = ExtResource( 4 )
+region = Rect2( 0, 1536, 512, 512 )
+
+[sub_resource type="AtlasTexture" id=33]
+flags = 4
+atlas = ExtResource( 4 )
+region = Rect2( 512, 1536, 512, 512 )
+
+[sub_resource type="AtlasTexture" id=34]
+flags = 4
+atlas = ExtResource( 4 )
+region = Rect2( 1024, 1536, 512, 512 )
+
+[sub_resource type="AtlasTexture" id=35]
+flags = 4
+atlas = ExtResource( 4 )
+region = Rect2( 1536, 1536, 512, 512 )
+
+[sub_resource type="AtlasTexture" id=36]
+flags = 4
+atlas = ExtResource( 4 )
+region = Rect2( 2048, 1536, 512, 512 )
+
+[sub_resource type="AtlasTexture" id=37]
+flags = 4
+atlas = ExtResource( 4 )
+region = Rect2( 2560, 1536, 512, 512 )
+
+[sub_resource type="AtlasTexture" id=38]
+flags = 4
+atlas = ExtResource( 4 )
+region = Rect2( 3072, 1536, 512, 512 )
+
+[sub_resource type="AtlasTexture" id=39]
+flags = 4
+atlas = ExtResource( 4 )
+region = Rect2( 3584, 1536, 512, 512 )
+
+[sub_resource type="AtlasTexture" id=40]
+flags = 4
+atlas = ExtResource( 4 )
+region = Rect2( 0, 2048, 512, 512 )
+
+[sub_resource type="AtlasTexture" id=41]
+flags = 4
+atlas = ExtResource( 4 )
+region = Rect2( 512, 2048, 512, 512 )
+
+[sub_resource type="AtlasTexture" id=42]
+flags = 4
+atlas = ExtResource( 4 )
+region = Rect2( 1024, 2048, 512, 512 )
+
+[sub_resource type="AtlasTexture" id=43]
+flags = 4
+atlas = ExtResource( 4 )
+region = Rect2( 1536, 2048, 512, 512 )
+
+[sub_resource type="AtlasTexture" id=44]
+flags = 4
+atlas = ExtResource( 4 )
+region = Rect2( 2048, 2048, 512, 512 )
+
+[sub_resource type="AtlasTexture" id=45]
+flags = 4
+atlas = ExtResource( 4 )
+region = Rect2( 2560, 2048, 512, 512 )
+
+[sub_resource type="AtlasTexture" id=46]
+flags = 4
+atlas = ExtResource( 4 )
+region = Rect2( 3072, 2048, 512, 512 )
+
+[sub_resource type="AtlasTexture" id=47]
+flags = 4
+atlas = ExtResource( 4 )
+region = Rect2( 3584, 2048, 512, 512 )
+
+[sub_resource type="AtlasTexture" id=48]
+flags = 4
+atlas = ExtResource( 4 )
+region = Rect2( 0, 2560, 512, 512 )
+
+[sub_resource type="AtlasTexture" id=49]
+flags = 4
+atlas = ExtResource( 4 )
+region = Rect2( 512, 2560, 512, 512 )
+
+[sub_resource type="AtlasTexture" id=50]
+flags = 4
+atlas = ExtResource( 4 )
+region = Rect2( 1024, 2560, 512, 512 )
+
+[sub_resource type="AtlasTexture" id=51]
+flags = 4
+atlas = ExtResource( 4 )
+region = Rect2( 1536, 2560, 512, 512 )
+
+[sub_resource type="AtlasTexture" id=52]
+flags = 4
+atlas = ExtResource( 4 )
+region = Rect2( 2048, 2560, 512, 512 )
+
 [sub_resource type="AtlasTexture" id=6]
 flags = 4
 atlas = ExtResource( 4 )
@@ -23,6 +249,11 @@ region = Rect2( 0, 0, 512, 512 )
 
 [sub_resource type="SpriteFrames" id=7]
 animations = [ {
+"frames": [ SubResource( 8 ), SubResource( 9 ), SubResource( 10 ), SubResource( 11 ), SubResource( 12 ), SubResource( 13 ), SubResource( 14 ), SubResource( 15 ), SubResource( 16 ), SubResource( 17 ), SubResource( 18 ), SubResource( 19 ), SubResource( 20 ), SubResource( 21 ), SubResource( 22 ), SubResource( 23 ), SubResource( 24 ), SubResource( 25 ), SubResource( 26 ), SubResource( 27 ), SubResource( 28 ), SubResource( 29 ), SubResource( 30 ), SubResource( 31 ), SubResource( 32 ), SubResource( 33 ), SubResource( 34 ), SubResource( 35 ), SubResource( 36 ), SubResource( 37 ), SubResource( 38 ), SubResource( 39 ), SubResource( 40 ), SubResource( 41 ), SubResource( 42 ), SubResource( 43 ), SubResource( 44 ), SubResource( 45 ), SubResource( 46 ), SubResource( 47 ), SubResource( 48 ), SubResource( 49 ), SubResource( 50 ), SubResource( 51 ), SubResource( 52 ) ],
+"loop": false,
+"name": "WaterDrinking",
+"speed": 3.0
+}, {
 "frames": [ SubResource( 6 ) ],
 "loop": true,
 "name": "default",
@@ -32,6 +263,7 @@ animations = [ {
 [node name="HUD_WaterActivity" type="CanvasLayer"]
 layer = -1
 script = ExtResource( 2 )
+TotalNumberOfSeconds = 15
 
 [node name="ColorRect" type="ColorRect" parent="."]
 anchor_right = 1.0
@@ -42,10 +274,10 @@ color = Color( 0.396078, 0.596078, 0.929412, 1 )
 [node name="StartingInstuction" type="Label" parent="."]
 anchor_left = 0.5
 anchor_right = 0.5
-margin_left = -214.0
-margin_top = 237.0
-margin_right = 214.0
-margin_bottom = 264.0
+margin_left = -264.0
+margin_top = 282.0
+margin_right = 264.0
+margin_bottom = 479.0
 grow_horizontal = 2
 grow_vertical = 2
 custom_colors/font_color = Color( 1, 1, 0.996078, 1 )
@@ -54,10 +286,6 @@ text = "Go get a Glass
 of Water"
 align = 1
 valign = 1
-
-[node name="HideInstructionsTimer" type="Timer" parent="StartingInstuction"]
-wait_time = 2.0
-autostart = true
 
 [node name="Continue" type="Label" parent="."]
 anchor_left = 0.5
@@ -75,6 +303,19 @@ align = 1
 valign = 1
 
 [node name="Next" type="TextureButton" parent="."]
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -321.0
+margin_top = -246.0
+margin_right = -101.0
+margin_bottom = -76.0
+texture_normal = ExtResource( 3 )
+texture_pressed = ExtResource( 3 )
+
+[node name="Next_EndGame" type="TextureButton" parent="."]
+visible = false
 anchor_left = 1.0
 anchor_top = 1.0
 anchor_right = 1.0
@@ -123,5 +364,9 @@ position = Vector2( 540, 980 )
 scale = Vector2( 1.85938, 1.85938 )
 frames = SubResource( 7 )
 
-[connection signal="timeout" from="StartingInstuction/HideInstructionsTimer" to="." method="_on_HideInstructionsTimer_timeout"]
+[node name="GulpSound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 6 )
+volume_db = 12.0
+
 [connection signal="button_down" from="Next" to="." method="_on_Next_button_down"]
+[connection signal="button_down" from="Next_EndGame" to="." method="_on_Next_EndGame_button_down"]
