@@ -30,9 +30,9 @@ z_index = 10
 position = Vector2( 540, 470 )
 scale = Vector2( 0.8, 0.8 )
 
-[connection signal="changeText" from="Parent/Rainbow" to="HUD" method="_on_Rainbow_changeText"]
+[connection signal="changeText" from="Parent/Rainbow" to="HUD" method="_on_changeText"]
 [connection signal="RequiredCyclesFinished" from="Parent/LoveButton" to="HUD" method="_on_LoveButton_RequiredCyclesFinished"]
 [connection signal="loveButtonHeld" from="Parent/LoveButton" to="Parent/Rainbow" method="_on_LoveButton_loveButtonHeld"]
-[connection signal="resetInstructions" from="Parent/LoveButton" to="HUD" method="_on_LoveButton_resetInstructions"]
+[connection signal="resetInstructions" from="Parent/LoveButton" to="HUD" method="_on_changeText"]
 
 [editable path="Parent/LoveButton"]

@@ -1,3 +1,7 @@
+#This script is the main one that controls and directs the rest of the nodes accordingly. This does:
+#
+
+
 extends Node2D
 
 export var numberOfBreathCycles = 1
@@ -18,19 +22,20 @@ signal loveButtonHeld
 signal RequiredCyclesFinished
 signal resetInstructions
 
+#This function runs every frame
 func _process(delta):
 	if Input.is_mouse_button_pressed(BUTTON_LEFT):
 		if isMouseOnLoveButton:
-			if isBreatheInCompleted:
-				timeHeld -= delta*2
+			if isBreatheInCompleted: #If the player is exhaling the timer is reduced back from post-breathe in state to 0
+				timeHeld -= delta*2 # Multiplying by two to count at double speed. i.e one cycle takes 3.5 seconds if the timer says 7 seconds
 				if numOfSeconds != ceil(timeHeld):
 					numOfSeconds = ceil(timeHeld)
-			else:
+			else: #If the player is inhaling, timer is counted till it reaches the required amount of seconds
 				timeHeld += delta*2
 				if numOfSeconds != floor(timeHeld):
 					numOfSeconds = floor(timeHeld)
 				
-				
+			
 			if numOfSeconds == BreatheTimer and not isHalfCycleEnd:
 				timeHeld = BreatheTimer
 				isHalfCycleEnd = true
@@ -78,7 +83,7 @@ func _input(event):
 	if event is InputEventMouseButton:
 		if event.button_index == BUTTON_LEFT and not event.is_pressed():
 			emit_signal("loveButtonHeld", 0, true, false)
-			emit_signal("resetInstructions")
+			emit_signal("resetInstructions", "Press Heart")
 			timeHeld = 0
 			isBreatheInCompleted = false
 			isHalfCycleEnd = false

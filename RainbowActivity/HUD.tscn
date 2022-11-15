@@ -52,14 +52,33 @@ text = "Tap & Hold"
 align = 1
 valign = 1
 
+[node name="Continue" type="Label" parent="."]
+visible = false
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -341.0
+margin_top = 749.0
+margin_right = 232.0
+margin_bottom = 846.0
+theme = SubResource( 1 )
+custom_colors/font_color = Color( 0.317647, 0.482353, 0.752941, 1 )
+custom_fonts/font = SubResource( 2 )
+text = "Tap to continue"
+align = 1
+valign = 1
+
 [node name="Next" type="TextureButton" parent="."]
 visible = false
 anchor_left = 0.98
 anchor_top = 0.98
 anchor_right = 0.98
 anchor_bottom = 0.98
-margin_left = -220.0
-margin_top = -170.0
+margin_left = -264.0
+margin_top = -199.6
+margin_right = -44.0
+margin_bottom = -29.6001
 texture_normal = ExtResource( 3 )
 texture_pressed = ExtResource( 3 )
 
