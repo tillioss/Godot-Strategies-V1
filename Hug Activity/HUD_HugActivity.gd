@@ -39,10 +39,10 @@ func _process(delta):
 			$TilliHugging.stop()
 			isTimerActive = false
 
-# Supposedly developed for integration between webapp and the game
-# When player presses on the next button this directs the player back to the webapp, for now it goes to Tilli website as a test
+# This function acts as a bridge for integration between webapp and the game
+# When player presses on the next button this directs the player back to the webapp
 func _on_Next_button_down():
-	OS.shell_open(JavaScript.eval('window.location.replace("https://www.tillikids.org/")'))
+	OS.shell_open(JavaScript.eval('window.location.replace("https://tilli.teqbahn.com/tilli-web/godot-redirect")'))
 	get_tree().quit()
 
 

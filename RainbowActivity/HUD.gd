@@ -15,9 +15,8 @@ func _on_LoveButton_RequiredCyclesFinished():
 	$Next.show()
 	$Continue.show()
 
-# Supposedly developed for integration between webapp and the game
-# When player presses on the next button this directs the player back to the webapp, for now it goes to Tilli website as a test
+# Acts as bridge between godot game activity and the web app 
+# When player presses on the next button this directs the player back to the webapp
 func _on_Next_button_down():
 	OS.shell_open(JavaScript.eval('window.location.replace("https://tilli.teqbahn.com/tilli-web/godot-redirect")'))
 	get_tree().quit()
-	#JavaScript.eval('window.location.replace("https://www.tillikids.org/')

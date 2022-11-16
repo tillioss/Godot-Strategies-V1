@@ -15,10 +15,10 @@ func _ready():
 	bubbleCountString = $CounterBG/Score #Holding a reference to the score variable
 	bubbleCountString.text = str(NumberOfBubbles) #Setting the value to our required bubble pop count
 
-# Supposedly developed for integration between webapp and the game
-# When player presses on the next button this directs the player back to the webapp, for now it goes to Tilli website as a test
+# The function acts as a bridge for integration between webapp and the game
+# When player presses on the next button this directs the player back to the webapp
 func _on_Next_button_down():
-	OS.shell_open(JavaScript.eval('window.location.replace("https://www.tillikids.org/")'))
+	OS.shell_open(JavaScript.eval('window.location.replace("https://tilli.teqbahn.com/tilli-web/godot-redirect")'))
 	get_tree().quit()
 
 #This is called by connecting to the BubbleSpawner's signal that tells us that a child bubble is popped
