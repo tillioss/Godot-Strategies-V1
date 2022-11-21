@@ -23,10 +23,13 @@ signal loveButtonHeld
 signal RequiredCyclesFinished
 signal resetInstructions
 
+var isRequiredCyclesOverSignalSent = false
+var isMouseHeld = false
 #This function runs every frame
 func _process(delta):
 	if Input.is_mouse_button_pressed(BUTTON_LEFT): #Checking if the player kept the mouse button pressed on not
 		if isMouseOnLoveButton:
+			isMouseHeld = true
 			if isBreatheInCompleted: #If the player is exhaling the timer is reduced back from post-breathe in state to 0
 				#Multiplying by two to count at double speed. i.e one cycle takes 3.5 seconds if the timer says 7 seconds
 				timeHeld -= delta*2 # Doing so for the ease of calculations it is easier to track 7 seconds that 3.5 seconds precisely
@@ -43,6 +46,7 @@ func _process(delta):
 				isHalfCycleEnd = true #Setting BreatheIn is done
 				isCycleActive = true #Setting a variable to track if a cycle has started. 
 				emit_signal("loveButtonHeld", numOfSeconds, !isBreatheInCompleted, true) #Emitting signal to update text to Hold
+				$HoldAudio.play()
 				StopProcessForTimeMidCycle(HoldTimer) #Stopping the process for rquired time to execute "Hold Breath" in between the cycle
 			else:
 				emit_signal("loveButtonHeld", numOfSeconds, !isBreatheInCompleted, false) #Emitting a signal to set the rainbow and text perfectly when not in BreathHold state
@@ -50,17 +54,21 @@ func _process(delta):
 			#timeHeld<0 only happens after the breathe out cycle is finished. The following if block resets everthing to restart cycle
 			if timeHeld < 0:
 				emit_signal("loveButtonHeld", numOfSeconds, !isBreatheInCompleted, true) #Setting Hold state to be true
+				$HoldAudio.play()
 				isBreatheInCompleted = false #Resetting values to restart cycle
 				isHalfCycleEnd = false  
 				timeHeld = 0
 				numberOfCyclesDone = numberOfCyclesDone+1 #Updating the numberOfCycles done to keep a track of how many breath cycles player has done
-				if numberOfCyclesDone >= numberOfBreathCycles: #Checking if required number of cycles done to let users go to next
+				if numberOfCyclesDone >= numberOfBreathCycles and !isRequiredCyclesOverSignalSent: #Checking if required number of cycles done to let users go to next
 					emit_signal("RequiredCyclesFinished") 
+					isRequiredCyclesOverSignalSent = true
 				StopProcessAtEndOfCycle(HoldTimer) #Hold the timer at breathe hold state before restarting the breathe cycle
 				
 			#Setting the heart Icon UI if the player is pressing it and it is not already set to pressed state
 			if not HeartIconSet:
 				$AnimatedSprite.play("pressed")
+				$BreathingBG.play()
+				$BreatheInAudio.play()
 				HeartIconSet = true
 			
 #This function enables to stop the breathing process and calculations for a given amount of time
@@ -72,7 +80,8 @@ func StopProcessForTimeMidCycle(time):
 	#But after resetting all variables, as the yield might return back here after its time runs out and sets isBreatheInComplete= true which will disrupt the cycle.
 	#As Letting go of heart icon resets all variables for eg isCycleActive= false, we're checking if the player hasn't let go of it to ensure we can continue with the cycle execution
 	if isCycleActive:
-		 isBreatheInCompleted = true #After Hold setting breatheIn completed state
+		isBreatheInCompleted = true #After Hold setting breatheIn completed state
+		$BreatheOutAudio.play()
 	set_process(true) #Reenabling the process after hold
 
 #This function enables to stop the breathing process and calculations for a given amount of time
@@ -80,6 +89,8 @@ func StopProcessForTimeMidCycle(time):
 func StopProcessAtEndOfCycle(time):
 	set_process(false)
 	yield(get_tree().create_timer(time), "timeout") #Waiting for the timer to end before enabling the process again
+	if isMouseHeld:
+		$BreatheInAudio.play()
 	set_process(true)  #Reenabling the process after hold
 
 #The function is an inbuilt function that handles input			
@@ -89,11 +100,13 @@ func _input(event):
 			emit_signal("loveButtonHeld", 0, true, false) #Resetting the rainbow
 			emit_signal("resetInstructions", "Press Heart") #Setting the text prompt to hold
 			#Resetting all values
+			isMouseHeld = false
 			timeHeld = 0
 			isBreatheInCompleted = false
 			isHalfCycleEnd = false
 			isCycleActive = false
 			$AnimatedSprite.play("not_pressed")
+			$BreathingBG.stop()
 			HeartIconSet = false
 	
 #Signal that is received if the mouse is on the LoveButton so we can allow or not allow the breathing cycles

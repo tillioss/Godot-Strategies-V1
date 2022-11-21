@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/1. Pop 20 Bubbles_Tilli.mp3-1491cacc7f0a778aa9c0f0751298a1ac.mp3str"
+
+[deps]
+
+source_file="res://AudioAll/Bubble Pop/1. Pop 20 Bubbles_Tilli.mp3"
+dest_files=[ "res://.import/1. Pop 20 Bubbles_Tilli.mp3-1491cacc7f0a778aa9c0f0751298a1ac.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/2. Self Hug BG.mp3-782286bc73914b3fb7a708a601832e5d.mp3str"
+
+[deps]
+
+source_file="res://AudioAll/Self Hug/2. Self Hug BG.mp3"
+dest_files=[ "res://.import/2. Self Hug BG.mp3-782286bc73914b3fb7a708a601832e5d.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

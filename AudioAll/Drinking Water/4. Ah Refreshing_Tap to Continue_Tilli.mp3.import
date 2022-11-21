@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/4. Ah Refreshing_Tap to Continue_Tilli.mp3-e45eb373b19f54b3f17ac2ad8d776513.mp3str"
+
+[deps]
+
+source_file="res://AudioAll/Drinking Water/4. Ah Refreshing_Tap to Continue_Tilli.mp3"
+dest_files=[ "res://.import/4. Ah Refreshing_Tap to Continue_Tilli.mp3-e45eb373b19f54b3f17ac2ad8d776513.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

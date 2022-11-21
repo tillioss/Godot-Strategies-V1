@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/3. Hugs Help Reduce Stress_Tilli.mp3-588b614c223e61ba8ddb782065a1da47.mp3str"
+
+[deps]
+
+source_file="res://AudioAll/Self Hug/3. Hugs Help Reduce Stress_Tilli.mp3"
+dest_files=[ "res://.import/3. Hugs Help Reduce Stress_Tilli.mp3-588b614c223e61ba8ddb782065a1da47.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/3. Hold_Tilli.mp3-6ef7a5ac3a743d8abd8e97a500747c5a.mp3str"
+
+[deps]
+
+source_file="res://AudioAll/Rainbow Breathing/3. Hold_Tilli.mp3"
+dest_files=[ "res://.import/3. Hold_Tilli.mp3-6ef7a5ac3a743d8abd8e97a500747c5a.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

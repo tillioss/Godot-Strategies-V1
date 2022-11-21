@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/1. Go get a glass of water_Tilli.mp3-18532918dce54f0d77f561d9cc1077c0.mp3str"
+
+[deps]
+
+source_file="res://AudioAll/Drinking Water/1. Go get a glass of water_Tilli.mp3"
+dest_files=[ "res://.import/1. Go get a glass of water_Tilli.mp3-18532918dce54f0d77f561d9cc1077c0.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

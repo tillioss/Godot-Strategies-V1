@@ -1,9 +1,13 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=12 format=2]
 
 [ext_resource path="res://Fredoka-Bold.ttf" type="DynamicFontData" id=1]
 [ext_resource path="res://YogaActivity/HUD_YogaActivity.gd" type="Script" id=2]
 [ext_resource path="res://RainbowActivity/Next Button.png" type="Texture" id=3]
+[ext_resource path="res://AudioAll/Yoga/4. Tap to continue_Milo.mp3" type="AudioStream" id=4]
 [ext_resource path="res://BubblePop/CounterBG.png" type="Texture" id=5]
+[ext_resource path="res://AudioAll/Yoga/2. Do it with me_Milo.mp3" type="AudioStream" id=6]
+[ext_resource path="res://AudioAll/Yoga/1. Let's practice a Yoga Pose_Milo.mp3" type="AudioStream" id=7]
+[ext_resource path="res://AudioAll/Yoga/3. Yoga BG.mp3" type="AudioStream" id=8]
 
 [sub_resource type="DynamicFont" id=2]
 size = 80
@@ -43,6 +47,7 @@ valign = 1
 
 [node name="HideInstructionsTimer" type="Timer" parent="StartingInstuction"]
 wait_time = 2.0
+one_shot = true
 autostart = true
 
 [node name="Continue" type="Label" parent="."]
@@ -119,6 +124,19 @@ custom_fonts/font = SubResource( 4 )
 text = "120"
 align = 1
 valign = 1
+
+[node name="TapToContinueSound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 4 )
+
+[node name="DoItWithMeSound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 6 )
+
+[node name="LetsPracticeAYogaPose" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 7 )
+
+[node name="YogaBG" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 8 )
+volume_db = -6.0
 
 [connection signal="timeout" from="StartingInstuction/HideInstructionsTimer" to="." method="_on_HideInstructionsTimer_timeout"]
 [connection signal="button_down" from="Next" to="." method="_on_Next_button_down"]

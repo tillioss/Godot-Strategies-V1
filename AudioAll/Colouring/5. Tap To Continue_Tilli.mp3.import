@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/5. Tap To Continue_Tilli.mp3-f0f12b17f682c4fedaf5984cda2d7741.mp3str"
+
+[deps]
+
+source_file="res://AudioAll/Colouring/5. Tap To Continue_Tilli.mp3"
+dest_files=[ "res://.import/5. Tap To Continue_Tilli.mp3-f0f12b17f682c4fedaf5984cda2d7741.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

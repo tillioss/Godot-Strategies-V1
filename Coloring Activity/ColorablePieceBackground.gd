@@ -20,6 +20,8 @@ func _input(event):
 			if isMouseOnShape:
 				print("Background Input Event registered")
 				shapeToBePainted.modulate = colorToPaint #Setting the color 
+				if colorToPaint != Color.white:
+					$ColorPaintedSound.play()
 				get_tree().set_input_as_handled() #Cancelling the input mouse click after its purpose is done to avoid coloring overlappoing items
 
 #Check if mouse pointer is on the node

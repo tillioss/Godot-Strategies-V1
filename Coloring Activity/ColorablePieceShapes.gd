@@ -31,6 +31,7 @@ func _input(event):
 				shapeToBePainted.modulate = colorToPaint #Change Color
 				if isARealColor:  #As we do not consider default white which isnt in the palette, coloring with white doesn't change the status of this shape's colored or not to true
 					isShapePainted = true #When colored with non-white, changes the status to true
+					$ColorPaintedSound.play()
 				emit_signal("coloredThisShape") #Everytime this signal is emitted the ColorableShapesParent Checks if all the shapes are painted or not to finish the activity
 				get_tree().set_input_as_handled() #Cancelling the current input so as to avoid coloring the same on overlapped nodes
 

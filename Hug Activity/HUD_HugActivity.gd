@@ -37,6 +37,7 @@ func _process(delta):
 			$StartingInstuction.hide()
 			$Continue.show()
 			$TilliHugging.stop()
+			$TapToContinueSound.play()
 			isTimerActive = false
 
 # This function acts as a bridge for integration between webapp and the game

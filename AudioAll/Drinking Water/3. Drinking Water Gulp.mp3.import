@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/3. Drinking Water Gulp.mp3-63f71e0969ae51d1974011dd7ce0a8ab.mp3str"
+
+[deps]
+
+source_file="res://AudioAll/Drinking Water/3. Drinking Water Gulp.mp3"
+dest_files=[ "res://.import/3. Drinking Water Gulp.mp3-63f71e0969ae51d1974011dd7ce0a8ab.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

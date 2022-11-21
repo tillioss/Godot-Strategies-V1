@@ -21,7 +21,8 @@ func _ready():
 	timeLeftString.text = str(TotalNumberOfSeconds) 
 	currentNumberOfSeconds = TotalNumberOfSeconds #Integer tracker for seconds
 	floatTime = TotalNumberOfSeconds #Float tracker form milli seconds based on delta time
-	
+	yield(get_tree().create_timer(0.5),"timeout")
+	$GoGetAGlassOfWaterSound.play()
 	
 	
 func _process(delta):
@@ -37,6 +38,7 @@ func _process(delta):
 			$TimerBG.hide() 
 			$Next_EndGame.show() #Show the button the allows users to proceed when clicked
 			$StartingInstuction.text = "Ah! Refreshing!"
+			$TapToContinueSound.play()
 			$Continue.show() #Show text message prompting player to click on the button
 			$WaterGlass.stop()
 			isTimerActive = false #Stop further counting as the activity is done
@@ -48,6 +50,7 @@ func _on_Next_button_down():
 	$Continue.hide()
 	$Next.hide() #Hide the next button and message as player has already clicked on it
 	$StartingInstuction.text = "Drink the water and\nfeel it cool you down"
+	$DrinkWaterAndFeelItSound.play()
 	$TimerBG.show() #Show the timer UI
 
 # Function acts as a bridge for integration between webapp and the game

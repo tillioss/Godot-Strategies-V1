@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/1. Press Heart_Tilli.mp3-450f56d21fbd207eca18568a190cb98e.mp3str"
+
+[deps]
+
+source_file="res://AudioAll/Rainbow Breathing/1. Press Heart_Tilli.mp3"
+dest_files=[ "res://.import/1. Press Heart_Tilli.mp3-450f56d21fbd207eca18568a190cb98e.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

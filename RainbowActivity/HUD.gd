@@ -6,6 +6,10 @@ extends CanvasLayer
 
 onready var TextMessage = $BreathingInstructions
 
+func _ready():
+	yield(get_tree().create_timer(0.5), "timeout")
+	$PressHeartSound.play()
+
 #This function is connected to Rainbow Script or LoveButton Script and Changes the displayed breathing instruction based on received message.
 func _on_changeText(message):
 	TextMessage.text = message
@@ -14,6 +18,7 @@ func _on_changeText(message):
 func _on_LoveButton_RequiredCyclesFinished():
 	$Next.show()
 	$Continue.show()
+	$TapToContinueSound.play()
 
 # Acts as bridge between godot game activity and the web app 
 # When player presses on the next button this directs the player back to the webapp

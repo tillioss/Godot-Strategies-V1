@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/2. Do it with me_Milo.mp3-9305b5b6c367b1e36f924b005b8803b5.mp3str"
+
+[deps]
+
+source_file="res://AudioAll/Yoga/2. Do it with me_Milo.mp3"
+dest_files=[ "res://.import/2. Do it with me_Milo.mp3-9305b5b6c367b1e36f924b005b8803b5.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

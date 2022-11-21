@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/4. Tap To Continue_Tilli.mp3-0ba17a086debcae34f27779cfaa66528.mp3str"
+
+[deps]
+
+source_file="res://AudioAll/Bubble Pop/4. Tap To Continue_Tilli.mp3"
+dest_files=[ "res://.import/4. Tap To Continue_Tilli.mp3-0ba17a086debcae34f27779cfaa66528.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

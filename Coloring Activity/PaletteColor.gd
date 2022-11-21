@@ -24,6 +24,7 @@ func _input(event):
 					BackgroundColor.modulate = Color(1,1,1) #Set the background color i.e the circle around the color to white to indicate that this is an active color
 					TickMark.show() #Show visual feedback of the color active status
 					isActive = true
+					$ColorSelectedSound.play()
 					emit_signal("colorSelected", ColorOfThis, get_node(".")) #Send a signal, usually the parent ColorManager receives it and further propogates it
 
 #Gets called when the mouse is on the color circle

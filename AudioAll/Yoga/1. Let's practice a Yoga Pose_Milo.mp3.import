@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/1. Let's practice a Yoga Pose_Milo.mp3-9df6ef1744eee76d0c96c1c9702cfbdb.mp3str"
+
+[deps]
+
+source_file="res://AudioAll/Yoga/1. Let's practice a Yoga Pose_Milo.mp3"
+dest_files=[ "res://.import/1. Let's practice a Yoga Pose_Milo.mp3-9df6ef1744eee76d0c96c1c9702cfbdb.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

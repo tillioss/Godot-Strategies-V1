@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/4. Color Selected.mp3-9bc5d264f9f0e43744bcc901cc0ba346.mp3str"
+
+[deps]
+
+source_file="res://AudioAll/Colouring/4. Color Selected.mp3"
+dest_files=[ "res://.import/4. Color Selected.mp3-9bc5d264f9f0e43744bcc901cc0ba346.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

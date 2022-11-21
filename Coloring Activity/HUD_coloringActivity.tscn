@@ -1,8 +1,11 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://Fredoka-Bold.ttf" type="DynamicFontData" id=1]
 [ext_resource path="res://Coloring Activity/HUD_coloringActivity.gd" type="Script" id=2]
 [ext_resource path="res://RainbowActivity/Next Button.png" type="Texture" id=3]
+[ext_resource path="res://AudioAll/Colouring/1. Use colours that express how you feel_Tilli.mp3" type="AudioStream" id=4]
+[ext_resource path="res://AudioAll/Colouring/3. Colouring BG.mp3" type="AudioStream" id=5]
+[ext_resource path="res://AudioAll/Colouring/5. Tap To Continue_Tilli.mp3" type="AudioStream" id=6]
 
 [sub_resource type="Theme" id=1]
 
@@ -66,5 +69,16 @@ margin_right = -33.4
 margin_bottom = -9.6001
 texture_normal = ExtResource( 3 )
 texture_pressed = ExtResource( 3 )
+
+[node name="ExpressYourselvesSound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 4 )
+
+[node name="TapToContinueSound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 6 )
+
+[node name="ColoringBG" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 5 )
+volume_db = -15.0
+autoplay = true
 
 [connection signal="button_down" from="Next" to="." method="_on_Next_button_down"]

@@ -1,0 +1,23 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/2. Paint Splash on Image.wav-8805e4b403e772346c7552eee22bc245.sample"
+
+[deps]
+
+source_file="res://AudioAll/Colouring/2. Paint Splash on Image.wav"
+dest_files=[ "res://.import/2. Paint Splash on Image.wav-8805e4b403e772346c7552eee22bc245.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=1
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

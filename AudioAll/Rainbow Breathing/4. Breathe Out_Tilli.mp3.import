@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/4. Breathe Out_Tilli.mp3-8fcc2ef476ce899f93e087c34d8020e6.mp3str"
+
+[deps]
+
+source_file="res://AudioAll/Rainbow Breathing/4. Breathe Out_Tilli.mp3"
+dest_files=[ "res://.import/4. Breathe Out_Tilli.mp3-8fcc2ef476ce899f93e087c34d8020e6.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

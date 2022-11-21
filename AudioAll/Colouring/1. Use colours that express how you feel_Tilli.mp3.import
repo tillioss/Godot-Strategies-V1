@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/1. Use colours that express how you feel_Tilli.mp3-995933beb77ece04d83b1ef9b0135744.mp3str"
+
+[deps]
+
+source_file="res://AudioAll/Colouring/1. Use colours that express how you feel_Tilli.mp3"
+dest_files=[ "res://.import/1. Use colours that express how you feel_Tilli.mp3-995933beb77ece04d83b1ef9b0135744.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

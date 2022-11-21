@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/3. Colouring BG.mp3-dc1c9385d95947e296c53d17f36f4b30.mp3str"
+
+[deps]
+
+source_file="res://AudioAll/Colouring/3. Colouring BG.mp3"
+dest_files=[ "res://.import/3. Colouring BG.mp3-dc1c9385d95947e296c53d17f36f4b30.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/1. Give Yourself a Big Hug_Tilli.mp3-2e0bc3dd28d15e652a6b45366c018f04.mp3str"
+
+[deps]
+
+source_file="res://AudioAll/Self Hug/1. Give Yourself a Big Hug_Tilli.mp3"
+dest_files=[ "res://.import/1. Give Yourself a Big Hug_Tilli.mp3-2e0bc3dd28d15e652a6b45366c018f04.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

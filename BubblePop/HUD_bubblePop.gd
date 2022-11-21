@@ -14,6 +14,8 @@ var bubbleCountString
 func _ready():
 	bubbleCountString = $CounterBG/Score #Holding a reference to the score variable
 	bubbleCountString.text = str(NumberOfBubbles) #Setting the value to our required bubble pop count
+	yield(get_tree().create_timer(0.5),"timeout")
+	$Pop20BubblesSound.play()
 
 # The function acts as a bridge for integration between webapp and the game
 # When player presses on the next button this directs the player back to the webapp
@@ -33,6 +35,7 @@ func _on_BubbleSpawner_oneMoreBubblePopped():
 		$Next.show() 
 		emit_signal("activityOver") #Emit signal to stop 
 		yield(get_tree().create_timer(3),"timeout")
+		$TapToContinueSound.play()
 		$Continue.show() #Show text suggesting players to continue
 	
 

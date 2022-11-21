@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/6. Rainbow BG.mp3-3dbe1d950cbf745798f4854147cec887.mp3str"
+
+[deps]
+
+source_file="res://AudioAll/Rainbow Breathing/6. Rainbow BG.mp3"
+dest_files=[ "res://.import/6. Rainbow BG.mp3-3dbe1d950cbf745798f4854147cec887.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

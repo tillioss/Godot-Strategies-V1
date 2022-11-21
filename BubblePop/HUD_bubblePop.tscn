@@ -1,9 +1,11 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://Fredoka-Bold.ttf" type="DynamicFontData" id=1]
 [ext_resource path="res://BubblePop/HUD_bubblePop.gd" type="Script" id=2]
 [ext_resource path="res://RainbowActivity/Next Button.png" type="Texture" id=3]
+[ext_resource path="res://AudioAll/Bubble Pop/1. Pop 20 Bubbles_Tilli.mp3" type="AudioStream" id=4]
 [ext_resource path="res://BubblePop/CounterBG.png" type="Texture" id=5]
+[ext_resource path="res://AudioAll/Bubble Pop/4. Tap To Continue_Tilli.mp3" type="AudioStream" id=6]
 
 [sub_resource type="DynamicFont" id=2]
 size = 80
@@ -103,6 +105,12 @@ custom_fonts/font = SubResource( 4 )
 text = "20"
 align = 1
 valign = 1
+
+[node name="TapToContinueSound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 6 )
+
+[node name="Pop20BubblesSound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 4 )
 
 [connection signal="timeout" from="StartingInstuction/HideInstructionsTimer" to="." method="_on_HideInstructionsTimer_timeout"]
 [connection signal="button_down" from="Next" to="." method="_on_Next_button_down"]

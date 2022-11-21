@@ -1,4 +1,4 @@
-[gd_scene load_steps=25 format=2]
+[gd_scene load_steps=26 format=2]
 
 [ext_resource path="res://Fredoka-Bold.ttf" type="DynamicFontData" id=1]
 [ext_resource path="res://Hug Activity/HUD_HugActivity.gd" type="Script" id=2]
@@ -8,6 +8,7 @@
 [ext_resource path="res://Hug Activity/TilliHug.png" type="Texture" id=6]
 [ext_resource path="res://Hug Activity/Self Hug 1 Audio.mp3" type="AudioStream" id=7]
 [ext_resource path="res://Hug Activity/Self Hug BG Audio.mp3" type="AudioStream" id=8]
+[ext_resource path="res://AudioAll/Colouring/5. Tap To Continue_Tilli.mp3" type="AudioStream" id=9]
 
 [sub_resource type="DynamicFont" id=2]
 size = 80
@@ -203,6 +204,9 @@ autostart = true
 [node name="HuggingBG" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 8 )
 volume_db = 6.0
+
+[node name="TapToContinueSound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 9 )
 
 [connection signal="timeout" from="StartingInstuction/ChangeInstructionsTimer" to="." method="_on_ChangeInstructionsTimer_timeout"]
 [connection signal="button_down" from="Next" to="." method="_on_Next_button_down"]

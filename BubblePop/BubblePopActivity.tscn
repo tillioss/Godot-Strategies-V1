@@ -18,7 +18,7 @@ position = Vector2( 403, 634 )
 
 [node name="BG_Music" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 3 )
-volume_db = -5.0
+volume_db = -10.0
 autoplay = true
 
 [connection signal="activityOver" from="HUD_bubblePop" to="BubbleSpawner" method="_on_HUD_bubblePop_activityOver"]
