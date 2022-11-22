@@ -22,7 +22,7 @@ func _ready():
 	TimerString = $TimerBG/Timer
 	TimerString.text = str(TotalNumberOfSeconds)
 	timerCount = TotalNumberOfSeconds
-	yield(get_tree().create_timer(0.25),"timeout")
+	yield(get_tree().create_timer(0.5),"timeout")
 	$LetsPracticeAYogaPose.play()
 
 # Function acts as a bridge for integration between webapp and the game
@@ -54,8 +54,9 @@ func _process(delta):
 func _on_HideInstructionsTimer_timeout():
 	$StartingInstuction.text = "Do it with me!" #Update the text to follow the pose
 	$YogaBG.play()
-	$DoItWithMeSound.play()
 	activeTimer = true #Start counter in the _process inbuilt function
 	emit_signal("beginAnimation") #Emit signal to the YogaCat script starts the animations
+	yield(get_tree().create_timer(0.25),"timeout")
+	$DoItWithMeSound.play()
 	
 

@@ -1,9 +1,8 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://Fredoka-Bold.ttf" type="DynamicFontData" id=1]
 [ext_resource path="res://RainbowActivity/HUD.gd" type="Script" id=2]
 [ext_resource path="res://RainbowActivity/Next Button.png" type="Texture" id=3]
-[ext_resource path="res://AudioAll/Colouring/5. Tap To Continue_Tilli.mp3" type="AudioStream" id=4]
 [ext_resource path="res://AudioAll/Rainbow Breathing/1. Press Heart_Tilli.mp3" type="AudioStream" id=5]
 
 [sub_resource type="Theme" id=1]
@@ -83,9 +82,6 @@ margin_right = -44.0
 margin_bottom = -29.6001
 texture_normal = ExtResource( 3 )
 texture_pressed = ExtResource( 3 )
-
-[node name="TapToContinueSound" type="AudioStreamPlayer" parent="."]
-stream = ExtResource( 4 )
 
 [node name="PressHeartSound" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 5 )

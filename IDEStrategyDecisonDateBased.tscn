@@ -1,3 +1,13 @@
-[gd_scene format=2]
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://IDEStrategyDecisonDateBased.gd" type="Script" id=1]
+[ext_resource path="res://YogaActivity/YogaActivity.tscn" type="PackedScene" id=2]
+[ext_resource path="res://RainbowActivity/RainbowBreathingActivity.tscn" type="PackedScene" id=3]
+[ext_resource path="res://WaterDrinkingActivity/WaterActivity.tscn" type="PackedScene" id=4]
+[ext_resource path="res://BubblePop/BubblePopActivity.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Coloring Activity/ColoringActivity.tscn" type="PackedScene" id=6]
+[ext_resource path="res://Hug Activity/HugActivity.tscn" type="PackedScene" id=7]
 
 [node name="MainDecisionScene" type="Node2D"]
+script = ExtResource( 1 )
+AllStrategyScenes = [ ExtResource( 7 ), ExtResource( 2 ), ExtResource( 5 ), ExtResource( 3 ), ExtResource( 4 ), ExtResource( 6 ) ]

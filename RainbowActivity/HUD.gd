@@ -18,7 +18,6 @@ func _on_changeText(message):
 func _on_LoveButton_RequiredCyclesFinished():
 	$Next.show()
 	$Continue.show()
-	$TapToContinueSound.play()
 
 # Acts as bridge between godot game activity and the web app 
 # When player presses on the next button this directs the player back to the webapp

@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://RainbowActivity/Heart Not Pressed.png" type="Texture" id=1]
 [ext_resource path="res://RainbowActivity/LoveButton.gd" type="Script" id=2]
@@ -7,6 +7,7 @@
 [ext_resource path="res://AudioAll/Rainbow Breathing/4. Breathe Out_Tilli.mp3" type="AudioStream" id=5]
 [ext_resource path="res://AudioAll/Rainbow Breathing/3. Hold_Tilli.mp3" type="AudioStream" id=6]
 [ext_resource path="res://AudioAll/Rainbow Breathing/6. Rainbow BG.mp3" type="AudioStream" id=7]
+[ext_resource path="res://AudioAll/Colouring/5. Tap To Continue_Tilli.mp3" type="AudioStream" id=8]
 
 [sub_resource type="SpriteFrames" id=2]
 animations = [ {
@@ -48,6 +49,9 @@ stream = ExtResource( 6 )
 [node name="BreathingBG" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 7 )
 volume_db = -9.0
+
+[node name="TapToContinueSound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 8 )
 
 [connection signal="mouse_entered" from="Area2D" to="." method="_on_Area2D_mouse_entered"]
 [connection signal="mouse_exited" from="Area2D" to="." method="_on_Area2D_mouse_exited"]

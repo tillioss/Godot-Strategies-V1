@@ -25,6 +25,7 @@ signal resetInstructions
 
 var isRequiredCyclesOverSignalSent = false
 var isMouseHeld = false
+var isTapToContinueSoundPlayed = false
 #This function runs every frame
 func _process(delta):
 	if Input.is_mouse_button_pressed(BUTTON_LEFT): #Checking if the player kept the mouse button pressed on not
@@ -108,6 +109,10 @@ func _input(event):
 			$AnimatedSprite.play("not_pressed")
 			$BreathingBG.stop()
 			HeartIconSet = false
+			#Playing audio of tap to continue once the button is let go and making sure it is only played once
+			if isRequiredCyclesOverSignalSent and not isTapToContinueSoundPlayed:
+				$TapToContinueSound.play()
+				isTapToContinueSoundPlayed = true
 	
 #Signal that is received if the mouse is on the LoveButton so we can allow or not allow the breathing cycles
 func _on_Area2D_mouse_entered():
