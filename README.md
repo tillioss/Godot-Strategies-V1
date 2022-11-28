@@ -2,6 +2,7 @@
  ABCDE strategies made in Godot
  
 We have created 6 different types of  strategies/ activities in Godot that help people regulate and manage their emotions better. It aids in reducing stress or anxiety during stressful/ negative scenarios, thus enabling oneself keep a positive self-image and outlook in life.
+
 The 6 Strategies are:
 1. Yoga
 2. Bubble Pop
