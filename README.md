@@ -9,6 +9,7 @@ The 6 Strategies are:
 4. Water Drinking
 5. Colouring
 6. Self Hug
+
 The code for the same are available here.
  
 ## Instructions to install Godot ##
