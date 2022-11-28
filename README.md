@@ -1,7 +1,15 @@
 # Godot_Strategies_V1
- ABCDE Pinwheel strategies made in Godot
+ ABCDE strategies made in Godot
  
-These coping strategies are developed using GDScript in Godot Game Engine, an open source free for all game engine that is available on most of the operating systems and platforms.
+We have created 6 different types of  strategies/ activities in Godot that help people regulate and manage their emotions better. It aids in reducing stress or anxiety during stressful/ negative scenarios, thus enabling oneself keep a positive self-image and outlook in life.
+The 6 Strategies are:
+1. Yoga
+2. Bubble Pop
+3. Rainbow Breathing
+4. Water Drinking
+5. Colouring
+6. Self Hug
+The code for the same are available here.
  
 ## Instructions to install Godot ##
  1. Download the Godot game engine from the official website here: [Godot](https://godotengine.org/ "Godot official Website")
