@@ -42,14 +42,14 @@ The code for the same are available here.
  
  [Click here to see all related files](https://github.com/tillioss/Godot-Strategies-V1/tree/main/RainbowActivity "Rainbow Activity")
   
- Design Documentation: [Read here](https://docs.google.com/document/d/1ZiZ07BwrDwRqOX5hrtREvo7ncnVkOR5u1zSYS4CkfOc/edit?usp=sharing "Documentation")
+ Design Documentation: To be updated...
   
 ### 3. Yoga Strategy ###
  Yoga Activity is a physical activity that will help kids by making them do beneficial Yoga poses. This will both serve as a physical and mental excercise.
 
  [Click here to see all related files](https://github.com/tillioss/Godot-Strategies-V1/tree/main/YogaActivity "Yoga Activity")
 
- Design Documentation: To be updated...
+ Design Documentation: [Read here](https://docs.google.com/document/d/1ZiZ07BwrDwRqOX5hrtREvo7ncnVkOR5u1zSYS4CkfOc/edit?usp=sharing "Documentation")
   
 ### 4. Coloring Activity ###
  Coloring Activity is the supposedly the most favorite way for kids to express themselves. They can be as creative as they wish and this helps them create their own unique signature art. Thereby, this strategy aims to give the kids a way be imaginative and give them the sense of uniqueness.
