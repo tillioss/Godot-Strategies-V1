@@ -42,7 +42,7 @@ The code for the same are available here.
  
  [Click here to see all related files](https://github.com/tillioss/Godot-Strategies-V1/tree/main/RainbowActivity "Rainbow Activity")
   
- Design Documentation: To be updated..
+ Design Documentation: [Read here](https://docs.google.com/document/d/1ZiZ07BwrDwRqOX5hrtREvo7ncnVkOR5u1zSYS4CkfOc/edit?usp=sharing "Documentation")
   
 ### 3. Yoga Strategy ###
  Yoga Activity is a physical activity that will help kids by making them do beneficial Yoga poses. This will both serve as a physical and mental excercise.
