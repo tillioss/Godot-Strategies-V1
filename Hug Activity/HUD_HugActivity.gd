@@ -1,5 +1,5 @@
 #This is the single script that manages everything the Hug Activity does. Its funtion:
-#1. Plays a voice message prompting to self-hug and displays appropriate texr
+#1. Plays a voice message prompting to self-hug and displays appropriate text
 #2. Once the timer of 2 seconds is done, it starts playing soothing music & updates text message
 #3. Now, it starts running a 15 second timer after which it prompts player to continue to next
 
