@@ -50,8 +50,15 @@ The code for the same are available here.
  [Click here to see all related files](https://github.com/tillioss/Godot-Strategies-V1/tree/main/YogaActivity "Yoga Activity")
 
  Design Documentation: [Read here](https://docs.google.com/document/d/1ZiZ07BwrDwRqOX5hrtREvo7ncnVkOR5u1zSYS4CkfOc/edit?usp=sharing "Documentation")
-  
-### 4. Coloring Activity ###
+
+### 4. Water Drinking Activity ###
+ Water Drinking activity is a coping mechanism that ususally helps calm the senses and reduce anxiety. It also helps in reducing dehydration thereby clearing the mind and body.
+
+[Click here to see all related files](https://github.com/tillioss/Godot-Strategies-V1/tree/main/WaterDrinkingActivity "Water Drinking Activity")
+
+Design Documentation: [Read here](https://docs.google.com/document/d/1uUCKTr9SfK4VLlgN_3mwWfcPW4m5awM9zz3msXPGr5g/edit?usp=sharing "Documentation")
+
+### 5. Coloring Activity ###
  Coloring Activity is the supposedly the most favorite way for kids to express themselves. They can be as creative as they wish and this helps them create their own unique signature art. Thereby, this strategy aims to give the kids a way be imaginative and give them the sense of uniqueness.
 
 [Click here to see all related files](https://github.com/tillioss/Godot-Strategies-V1/tree/main/Coloring%20Activity "Coloring Activity")
