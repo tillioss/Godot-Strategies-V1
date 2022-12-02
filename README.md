@@ -77,7 +77,6 @@ Design Documentation: [Read here](https://docs.google.com/document/d/1yelkAW0z0a
 
 ## Assigning Logic ##
 
-The logic behind assigning one of the above mentioned strategies is explained here:
-Design Documentation: [Read here](https://docs.google.com/document/d/139G3rM3TD-hQW4VbKHdDTWL5wk0VNgFKFEB7FGFwVbs/edit?usp=sharing "Assigning Logic Documentation")
+The logic behind assigning one of the above mentioned strategies is explained here: [Read here](https://docs.google.com/document/d/139G3rM3TD-hQW4VbKHdDTWL5wk0VNgFKFEB7FGFwVbs/edit?usp=sharing "Assigning Logic Documentation")
 
 As of now the logic is implemented as to test which strategy helps the kids better and will be further improved in the next iterations based on the feedback received from this version.
