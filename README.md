@@ -55,7 +55,7 @@ The code for the same are available here.
  Design Documentation: [Read here](https://docs.google.com/document/d/1yAe6VvVNCmBjj--Tr7tOfmOGZ8HgcHIfR7i30y4HhZc/edit?usp=sharing "Documentation")
 
 ### 4. Water Drinking Activity ###
- Water Drinking activity is a coping mechanism that usually helps calm the senses and reduce anxiety. It also helps fight dehydration caused due to kids physical activities. Thereby this strategy helps in clearing both the mind and body.
+ Water Drinking activity is a distance based strategy that usually helps calm the senses and reduce anxiety. It also helps fight dehydration caused due to kids physical activities. Thereby this strategy helps in clearing both the mind and body.
 
 [Click here to see all related files](https://github.com/tillioss/Godot-Strategies-V1/tree/main/WaterDrinkingActivity "Water Drinking Activity")
 
