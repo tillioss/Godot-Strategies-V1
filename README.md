@@ -15,8 +15,23 @@ The 6 Strategies are:
 5. Colouring
 6. Self Hug
 
-The code for the same are available here.
- 
+********************
+
+## Joining the Tilli Community 
+We are a community of learning designers, game designers, developers and educators with an interest in designing game-based, social emotional learning experience for kids. We create an environment where our community can effectively explore, create innovative and open aid distribution technology services that are inclusive, accountable, and accessible for everyone.
+
+### Contribution Guidelines
+
+We would love your input! We want to make contributing to this project as easy and transparent as possible so kindly go through our contribution guidelines here: [Contribution Guidelines](https://tillioss.github.io/docs/Contribution-Guidelines)
+
+### Code of Conduct
+<br>Please note that Tilli’s open-source projects are governed by our [Code of conduct](https://tillioss.github.io/docs/code-of-conduct). 
+
+## Getting started
+To get started, please have a look at our [User and Developer Documentation](https://tillioss.github.io/docs/getting-started-developer).
+
+********************
+
 ## Instructions to install Godot ##
  1. Download the Godot game engine from the official website here: [Godot](https://godotengine.org/ "Godot official Website")
  2. Unzip the downloaded file and run the Godot Application
@@ -31,7 +46,7 @@ The code for the same are available here.
  2. Open Godot game engine
  3. Import the project that you've just cloned
  
-## Strategies and Sub-folders ##
+## ABCDE Strategies and their Sub-folders ##
 
 ### 1. Yoga Strategy ###
  Yoga Activity is a physical activity that will help kids by making them do beneficial Yoga poses. This will both serve as a physical and mental excercise.
