@@ -83,7 +83,7 @@ Design Documentation: [Read here](https://docs.google.com/document/d/1uUCKTr9SfK
 
 [Click here to see all related files](https://github.com/tillioss/Godot-Strategies-V1/tree/main/Coloring%20Activity "Coloring Activity")
 
-Design Documentation: To be updated...
+Design Documentation: [Read here](https://docs.google.com/document/d/1M9Rti033Abqa7Xfr2dA3SwCboLT4f4BAbtOEduMOKEA/edit?usp=sharing "Documentation")
 
 ### 6. Self-Hug Activity
  Self Hug activity emphasizes the importance of loving oneself. It encourages kids to hug someone they trust or themselves as to relieve the stress and cope with the sadness they feel. This activity also plays a soothing music in the background to make the kids feels better.
