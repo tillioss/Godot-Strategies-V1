@@ -1,6 +1,6 @@
 name: Bug Report Form
 description: File a bug Report for our Godot Strategies-V1
-title: "Found a [bug] in [section name]"
+title: "Found a [bug] in [ABCDE Strategy Name]"
 labels: ["bug","development"]
 assignees:
   - Tilliforkids
