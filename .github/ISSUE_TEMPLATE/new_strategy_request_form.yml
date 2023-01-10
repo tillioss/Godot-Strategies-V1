@@ -40,7 +40,7 @@ body:
     description: What are the drawbacks/impacts of your strategy request?
     placeholder: Identify the drawbacks and impacts while being neutral on your strategy request
   validations:
-    required: true
+    required: false
 - type: textarea
   id: background
   attributes:
