@@ -1,7 +1,7 @@
 name: Bug Report Form
 description: File a bug Report for our Godot Strategies-V1
-title: "Found a [bug]"
-labels: ["bug","development"]
+title: "Found a [bug] in [section name]"
+labels: ["bug","development",'tilli:backlog"]
 assignees:
   - Tilliforkids
 body:
