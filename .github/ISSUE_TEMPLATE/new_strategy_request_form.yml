@@ -29,7 +29,7 @@ body:
   id: abcde-based
   attributes:
     label: ABCDE Based
-    description: Is the new strategy under any of the ABCDE techniques?[Read here](https://docs.google.com/document/d/1LtxitcCUhgsUzjIeFYDdqus4t8h6SDbAjwVKQUtDt7A/edit?usp=sharing "Introduction to the Ideology") Kindly elaborate
+    description: Is the new strategy under any of the ABCDE techniques? [Read here](https://docs.google.com/document/d/1LtxitcCUhgsUzjIeFYDdqus4t8h6SDbAjwVKQUtDt7A/edit?usp=sharing "Introduction to the Ideology") Kindly elaborate
     placeholder: Describe in a few lines about the problem the child would face and how this strategy will help them cope.
   validations:
     required: true
