@@ -1,0 +1,59 @@
+name: New Strategy Request Form
+description: Suggest a new mini game to create in our Godot-Strategies
+title: "Request for [New Strategy Name]"
+labels: ["enhancement","art & design","development"]
+assignees:
+  - Tilliforkids
+body:
+- type: markdown
+  attributes:
+    value: |
+      Thanks for taking the time to request a new strategy!
+- type: input
+  id: contact
+  attributes:
+    label: Contact Details
+    description: How can we get in touch with you if we need more info?
+    placeholder: ex. email@example.com
+  validations:
+    required: false
+- type: textarea
+  id: summary
+  attributes:
+    label: Summary
+    description: Provide a brief explanation of the new strategy you want to add
+    placeholder: Describe in a few lines your strategy. For example, objective, flow and game mechanics.
+  validations:
+    required: true
+- type: textarea
+  id: abcde-based
+  attributes:
+    label: ABCDE Based
+    description: Is the new strategy under any of the ABCDE techniques? Kindly elaborate
+    placeholder: Describe in a few lines about the problem the child would face and how this strategy will help them cope.
+  validations:
+    required: true
+- type: textarea
+  id: drawbacks
+  attributes:
+    label: Drawbacks
+    description: What are the drawbacks/impacts of your strategy request?
+    placeholder: Identify the drawbacks and impacts while being neutral on your strategy request
+  validations:
+    required: true
+- type: textarea
+  id: background
+  attributes:
+    label: Background
+    description: Share context as to why this new strategy is important or why it should be completed.
+    placeholder: This strategy is important because…
+  validations:
+    required: true
+- type: textarea
+  id: unresolved-question
+  attributes:
+    label: Unresolved questions
+    description: What questions still remain unresolved ?
+    placeholder: Identify any unresolved issues.
+  validations:
+    required: false
