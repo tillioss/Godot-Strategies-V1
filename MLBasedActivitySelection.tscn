@@ -1,0 +1,18 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://MLBasedActivitySelection.gd" type="Script" id=1]
+[ext_resource path="res://WaterDrinkingActivity/WaterActivity.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Coloring Activity/ColoringActivity.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Hug Activity/HugActivity.tscn" type="PackedScene" id=4]
+[ext_resource path="res://RainbowActivity/RainbowBreathingActivity.tscn" type="PackedScene" id=5]
+[ext_resource path="res://YogaActivity/YogaActivity.tscn" type="PackedScene" id=6]
+[ext_resource path="res://BubblePop/BubblePopActivity.tscn" type="PackedScene" id=7]
+
+[node name="URLBasedDecisionMaker" type="Node2D"]
+script = ExtResource( 1 )
+BubblePopActivity = ExtResource( 7 )
+ColoringActivity = ExtResource( 3 )
+SelfHugActivity = ExtResource( 4 )
+RainbowActivity = ExtResource( 5 )
+WaterDrinkingActivity = ExtResource( 2 )
+YogaActivity = ExtResource( 6 )
