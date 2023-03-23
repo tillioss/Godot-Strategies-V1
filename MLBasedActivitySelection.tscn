@@ -3,7 +3,7 @@
 [ext_resource path="res://MLBasedActivitySelection.gd" type="Script" id=1]
 [ext_resource path="res://WaterDrinkingActivity/WaterActivity.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Coloring Activity/ColoringActivity.tscn" type="PackedScene" id=3]
-[ext_resource path="res://Hug Activity/HugActivity.tscn" type="PackedScene" id=4]
+[ext_resource path="res://HugActivity/HugActivity.tscn" type="PackedScene" id=4]
 [ext_resource path="res://RainbowActivity/RainbowBreathingActivity.tscn" type="PackedScene" id=5]
 [ext_resource path="res://YogaActivity/YogaActivity.tscn" type="PackedScene" id=6]
 [ext_resource path="res://BubblePop/BubblePopActivity.tscn" type="PackedScene" id=7]

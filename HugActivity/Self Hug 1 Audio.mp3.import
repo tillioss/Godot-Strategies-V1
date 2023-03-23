@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Self Hug 1 Audio.mp3-adbc8b751d2e394b885d8cae3c957531.mp3str"
+
+[deps]
+
+source_file="res://HugActivity/Self Hug 1 Audio.mp3"
+dest_files=[ "res://.import/Self Hug 1 Audio.mp3-adbc8b751d2e394b885d8cae3c957531.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

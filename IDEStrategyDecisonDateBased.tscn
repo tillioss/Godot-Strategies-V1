@@ -6,7 +6,7 @@
 [ext_resource path="res://WaterDrinkingActivity/WaterActivity.tscn" type="PackedScene" id=4]
 [ext_resource path="res://BubblePop/BubblePopActivity.tscn" type="PackedScene" id=5]
 [ext_resource path="res://Coloring Activity/ColoringActivity.tscn" type="PackedScene" id=6]
-[ext_resource path="res://Hug Activity/HugActivity.tscn" type="PackedScene" id=7]
+[ext_resource path="res://HugActivity/HugActivity.tscn" type="PackedScene" id=7]
 
 [node name="MainDecisionScene" type="Node2D"]
 script = ExtResource( 1 )
