@@ -10,6 +10,7 @@ const __source = 'res://HugActivity/HUD_HugActivity.gd'
 var spy_scene
 var _runner: GdUnitSceneRunner
 
+var timeMultiplier = 10
 var _scene: Node
 var _hud: HudHugActivityTest
 
@@ -22,8 +23,10 @@ func before_test() -> void:
 
 func test__on_ChangeInstructionsTimer_timeout() -> void:
 	#assert_bool(_scene.isTimerActive).is_equal(true)
-	_runner.set_time_factor(10)
-	yield(_runner.simulate_frames(20, 1000), "completed")
+	_runner.set_time_factor(timeMultiplier) #Game runs fast
+	yield(_runner.simulate_frames(3, 1000*timeMultiplier), "completed")
 	assert_bool(_scene.isTimerActive).is_equal(true)
+	yield(_runner.simulate_frames(15, 1000*timeMultiplier), "completed")
+	assert_bool(_scene.isTimerActive).is_equal(false)
 	
 	
