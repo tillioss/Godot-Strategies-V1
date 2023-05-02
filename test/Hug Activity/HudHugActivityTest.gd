@@ -19,14 +19,14 @@ func before_test() -> void:
 	_scene = spy("res://HugActivity/HUD_HugActivity.tscn")
 	_runner = scene_runner(_scene)
 	_hud = _scene.find_node("HUD_HugActivity")
-	assert_bool(_scene.isTimerActive).is_equal(false)
+	assert_bool(_scene.isTimerActive).is_equal(false) #Checking before starting timer
 
 func test__on_ChangeInstructionsTimer_timeout() -> void:
 	#assert_bool(_scene.isTimerActive).is_equal(true)
 	_runner.set_time_factor(timeMultiplier) #Game runs fast
-	yield(_runner.simulate_frames(3, 1000*timeMultiplier), "completed")
-	assert_bool(_scene.isTimerActive).is_equal(true)
-	yield(_runner.simulate_frames(15, 1000*timeMultiplier), "completed")
-	assert_bool(_scene.isTimerActive).is_equal(false)
+	yield(_runner.simulate_frames(3, 1000*timeMultiplier), "completed") 
+	assert_bool(_scene.isTimerActive).is_equal(true) #Checking after starting Timer
+	yield(_runner.simulate_frames(15, 1000*timeMultiplier), "completed") 
+	assert_bool(_scene.isTimerActive).is_equal(false) #Checking after completing Timer
 	
 	
